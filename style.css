@@ -1,0 +1,46 @@
+html, head, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+table.sudokuContainer { border-collapse: collapse; font-family: Calibri, sans-serif; }
+table.sudokuContainer > colgroup, tbody { border: solid medium; }
+table.sudokuContainer > tbody > tr > td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
+
+.sudokuCellContainer > .sudokuCell {
+  display: none;
+}
+
+.sudokuCellContainer.solved > .sudokuCell {
+  display: block;
+}
+
+.sudokuCellContainer.solved > .sudokuShadowContainer {
+  display: none;
+}
+
+.sudokuCell {
+  display: block;
+  font-size: 1em;
+}
+
+.sudokuShadowContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sudokuShadowCell {
+  width: 33.33%;
+  font-size: 0.38em;
+}
+
+.hide {
+  color: transparent;
+}
